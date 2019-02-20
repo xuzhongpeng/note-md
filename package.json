@@ -4,11 +4,13 @@
   "description": "A Vue.js project",
   "author": "psycho <957869975@qq.com>",
   "private": true,
+  "main":"main.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js",
-    "electron":"electron electronConfig.js"
+    "electron":"electron .",
+    "pack": "electron-packager . md编辑器 --win --out ../myClient --arch=x64 --app-version=0.0.1 --electron-version=2.0.0"
   },
   "dependencies": {
     "highlight.js": "^9.14.2",

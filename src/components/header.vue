@@ -395,7 +395,7 @@ text1 | text2`,
       var myPosition='client'+position1;
       var nowSize=odiv[myPosition];
      // debugger
-      var timer = setInterval(function() {
+      var timer =setInterval(function() {
         var speed = 0;
         if (nowSize > size) {
           nowSize -=5;
@@ -414,12 +414,14 @@ text1 | text2`,
     moreCON() {
       if (!this.more) {
         this.startMover(document.getElementsByClassName('header')[0],'height',100,500);
+        document.getElementsByClassName('g_editor_container')[0].setAttribute('style','height:calc(100% - 104px)')
         document
           .getElementsByClassName("next")[0]
           .setAttribute("style", "transform: rotate(0deg);");
         this.more = true;
       } else {
-        this.startMover(document.getElementsByClassName('header')[0],'height',50,400);
+        this.startMover(document.getElementsByClassName('header')[0],'height',50,300);
+        setTimeout(()=>{document.getElementsByClassName('g_editor_container')[0].setAttribute('style','height:calc(100% - 51px)')},400)
         document
           .getElementsByClassName("next")[0]
           .setAttribute("style", "transform: rotate(270deg);");

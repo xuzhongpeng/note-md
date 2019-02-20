@@ -202,7 +202,7 @@ code here!
       }
 
       document.querySelector('textarea').dispatchEvent(new Event('input'));
-
+      
     }
   }
 }
