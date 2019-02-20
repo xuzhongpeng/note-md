@@ -50,7 +50,7 @@
 
 ## 下载打包
 
-`git clone git@github.com:ch957869975/md-editor.git`  
+`git clone git@github.com:xuzhongpeng/note-md.git`  
  `npm run dev` 或 `npm run build`
 打开 8080 端口即可看到预览
 ![](https://ws1.sinaimg.cn/mw690/0072Lfvtly1g081m8s9w9j32cm1l2qbc.jpg)
