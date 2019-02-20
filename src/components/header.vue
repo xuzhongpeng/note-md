@@ -233,7 +233,7 @@ text1 | text2`,
   methods: {
     goToGithub(name) {
       if (!name) return;
-      window.open("https://github.com/ch957869975/md-editor");
+      window.open("https://github.com/xuzhongpeng/note-md.git");
     },
     uploadError(error) {
       this.$Notice.error({
